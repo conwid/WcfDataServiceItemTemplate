@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" ?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="WcfDataServiceTemplateExtension" Version="1.0" Language="en-US" Publisher="Ákos Nagy" />
+        <DisplayName>WcfDataServiceTemplateExtension</DisplayName>
+        <Description xml:space="preserve">WCF Data Service item template for Visual Studio 2017.</Description>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 16.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="Wizard\Microsoft.VisualStudio.Data.ServicesWizard.dll" AssemblyName="Microsoft.VisualStudio.Data.ServicesWizard, Version=11.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" d:VsixSubPath="Wizard" />
+        <Asset Type="Microsoft.Data.Edm.5.6.4.nupkg" d:Source="File" Path="Packages\Microsoft.Data.Edm.5.6.4.nupkg" d:VsixSubPath="Packages" />
+        <Asset Type="Microsoft.Data.OData.5.6.4.nupkg" d:Source="File" Path="Packages\Microsoft.Data.OData.5.6.4.nupkg" d:VsixSubPath="Packages" />
+        <Asset Type="Microsoft.Data.Services.5.6.4.nupkg" d:Source="File" Path="Packages\Microsoft.Data.Services.5.6.4.nupkg" d:VsixSubPath="Packages" />
+        <Asset Type="Microsoft.Data.Services.Client.5.6.4.nupkg" d:Source="File" Path="Packages\Microsoft.Data.Services.Client.5.6.4.nupkg" d:VsixSubPath="Packages" />
+        <Asset Type="System.Spatial.5.6.4.nupkg" d:Source="File" Path="Packages\System.Spatial.5.6.4.nupkg" d:VsixSubPath="Packages" />
+        <Asset Type="Microsoft.OData.EntityFrameworkProvider.1.0.0-beta2.nupkg" d:Source="File" Path="Packages\Microsoft.OData.EntityFrameworkProvider.1.0.0-beta2.nupkg" d:VsixSubPath="Packages" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="WcfDataServiceTemplate" d:TargetPath="|WcfDataServiceTemplate;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="WcfDataServiceTemplateWeb" d:TargetPath="|WcfDataServiceTemplateWeb;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="WcfDataServiceTemplateVB" d:TargetPath="|WcfDataServiceTemplateVB;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="WcfDataServiceTemplateWebVB" d:TargetPath="|WcfDataServiceTemplateWebVB;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>
