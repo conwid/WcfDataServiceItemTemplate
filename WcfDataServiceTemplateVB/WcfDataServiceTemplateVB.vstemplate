@@ -6,7 +6,7 @@
     <Icon>__TemplateIcon.ico</Icon>
     <TemplateID>Microsoft.WAP.VisualBasic.WebDataService</TemplateID>
     <TemplateGroupID>Web</TemplateGroupID>
-    <ShowByDefault>false</ShowByDefault>
+    <ShowByDefault>true</ShowByDefault>
     <ProjectType>VisualBasic</ProjectType>
     <ProjectSubType>Web</ProjectSubType>
     <RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
